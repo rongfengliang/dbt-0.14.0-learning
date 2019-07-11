@@ -1,0 +1,39 @@
+
+# For more information on how to configure this file, please see:
+# https://github.com/fishtown-analytics/dbt/blob/master/sample.profiles.yml
+default:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      pass: password
+      port: 5432
+      dbname: postgres
+      schema: dalong
+      threads: 3
+pg:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      pass: dalong
+      port: 5432
+      dbname: postgres
+      schema: public
+      threads: 3
+demo:
+  target: dev
+  outputs:
+    dev:
+      type: postgres
+      host: 127.0.0.1
+      user: postgres
+      pass: dalong
+      port: 5432
+      dbname: postgres
+      schema: demo
+      threads: 3
